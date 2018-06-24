@@ -9,7 +9,8 @@ boston = datasets.load_boston()
 x = boston.data
 y = boston.target
 
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.33, random_state=16)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.33,
+                                                    random_state=16)
 
 model = LinearRegression()
 model.fit(x_train, y_train)
